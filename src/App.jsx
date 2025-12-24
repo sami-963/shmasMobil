@@ -20,10 +20,8 @@ import LongIn from "./pages/LongIn/LongIn.jsx";
 import CardsOfCoursess from "./pages/CardsOfCoursess/CardsOfCoursess.jsx";
 import Teacjers_profile from "./pages/profil/teachersprofile/teachersprofil.jsx";
 function App() {
-
-  const location = useLocation()
-  const IsFooter = location.pathname !== "/LongIn"
-
+  const location = useLocation();
+  const IsFooter = location.pathname !== "/LongIn";
 
   return (
     <>
@@ -33,23 +31,21 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Team" element={<Team />} />
-        <Route path="/Blog" element={<Blog />} />
+        <Route path="/blog" element={<Blog />} />
+
         <Route path="/pages/FAQ" element={<FAQ />} />
         <Route path="/profile" element={<Profil />} />
         <Route path="/teachersprofil" element={<Teacjers_profile />} />
         <Route path="/LongIn" element={<LongIn />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/Sadaqah" element={<Sadaqah />} />
+        <Route path="/sadaqah" element={<Sadaqah />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/TermsConditions" element={<TermsConditions />} />
         <Route path="/courses/:id" element={<CourseDetails />} />
         <Route path="/Team" element={<Team />} />
 
-        <Route
-          path="/Blog/BlogCard/:id"
-          element={<InformationAboutTheWeb />}
-        />
+        <Route path="/Blog/BlogCard/:id" element={<InformationAboutTheWeb />} />
 
         <Route path="/NotFoundPage" element={<NotFoundPage />} />
         <Route path="*" element={<NotFoundPage />} />
@@ -58,7 +54,6 @@ function App() {
 
       <ScrollToTop />
       {IsFooter && <Footer />}
-
     </>
   );
 }
