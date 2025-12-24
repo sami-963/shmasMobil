@@ -1,0 +1,33 @@
+.dashobrd-contaniner {
+  padding: 20px 25px;
+  position: relative; /* مهم للماسك */
+  margin: 2px;
+  border-radius: 15px;
+}
+.dashbord-header h4 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+}
+.dashbord-boxs {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  .dashbord-boxs {
+    overflow-x: auto;
+  flex-wrap: nowrap;
+
+  }
+}
+.dashbord-boxs::-webkit-scrollbar {
+  height: 4px;
+}
+
+.dashbord-boxs::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #aa01ff5d, #1dcffc56); /* التدرج */
+  border-radius: 10px;
+}

@@ -1,0 +1,318 @@
+/* حاوية التبويبات داخل صفحة الدورات */
+.courses-container .courses-tabs {
+  justify-content: center !important; /* محاذاة التبويبات للوسط */
+  gap: 50px; /* المسافة بين التبويبات */
+  text-align: start; /* محاذاة النص لليسار */
+  padding: 0 5px;
+  margin: 10px 0;
+}
+
+/* كل تبويب */
+.courses-tabs li {
+  position: relative; /* ضروري لتحديد خط التفعيل ::after */
+  padding-bottom: 5px;
+  cursor: pointer; /* عند المرور يصبح مؤشر الماوس يد */
+  font-weight: 600; /* خط غامق */
+}
+
+/* التبويب النشط */
+.courses-container .courses-tabs li.active::after {
+  content: "";
+  position: absolute;
+  width: 118%; /* عرض الخط تحت التبويب */
+  height: 2px;
+  background: linear-gradient(to right, #1dcffc, #ac01ff); /* التدرج اللوني */
+  bottom: -11px; /* وضع الخط تحت التبويب */
+  left: -11px;
+  border-radius: 4px;
+}
+
+/* رأس قسم الدورات */
+.courses-container .courses-header {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+}
+
+/* نجوم التقييم */
+.full,
+.half {
+  color: #ff9747; /* اللون البرتقالي للنجوم */
+}
+
+.star {
+  font-size: 15px; /* حجم النجوم */
+}
+
+/* قسم التقييمات */
+.reviews {
+  display: flex;
+  gap: 3px; /* المسافة بين النجوم والنص */
+  align-items: center; /* محاذاة عمودية */
+}
+
+.reviews span {
+  font-size: 14px; /* حجم نص التقييم */
+}
+
+/* زر الحفظ */
+.reviews .Fibookmark {
+  margin-right: 12px;
+}
+
+/* خط الإنجاز في بطاقة الدورة */
+.enroled_couresescard .copleteline {
+  display: flex;
+  width: 100%;
+  height: 5px;
+  position: relative;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.212); /* خلفية الخط الكاملة */
+}
+
+.enroled_couresescard .copleteline::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  height: 5px;
+  transition: all 1s; /* تأثير التحريك عند التغيير */
+  width: var(--lineWidth); /* يعتمد على النسبة المئوية */
+  background-color: #3eb75e; /* لون الخط المكتمل */
+  border-radius: 5px;
+}
+
+/* حجم بطاقة الدورة */
+.enroled_couresescard {
+  width: 30%;
+  transition: all 0.4s;
+}
+.enroled_couresescard:hover {
+  transform: scale(1.03);
+}
+.enroled_couresescard h2:hover {
+  background: linear-gradient(45deg, #ac01ff, #1dcffc); /* التدرج */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* صورة الدورة */
+.enroled_couresescard img {
+  width: 100%;
+  border-radius: 8px; /* حواف مستديرة */
+}
+
+/* عنوان الدورة */
+.enroled_couresescard h2 {
+  margin: 5px 0;
+  transition: all 0.4s;
+}
+
+/* عدد الدروس والطلاب */
+.numberOfStudents {
+  display: flex;
+  gap: 25px; /* المسافة بين الدروس والطلاب */
+}
+
+.lessons,
+.stundents {
+  display: flex;
+  gap: 5px; /* المسافة بين النص والأيقونة */
+}
+
+/* قسم نسبة الإنجاز */
+.completenamber {
+  margin: 2px 0;
+}
+
+/* تصميم البطاقة بشكل عام */
+.enroled_couresescard {
+  box-shadow: var(--box-shadow); /* الظل الخارجي */
+  background: radial-gradient(circle at 20% 30%, #283a6b17 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(102, 34, 75, 0.253) 0%),
+    radial-gradient(circle at 80% 100%, #6f2b9617 0%, transparent 50%), #050010; /* الخلفية مع التدرجات */
+  border-radius: 20px;
+  padding: 30px;
+  gap: 12px;
+  flex-direction: column;
+  display: flex;
+}
+
+/* محتوى الدورات */
+.courses-content {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+
+  justify-content: flex-start; /* مهم للسكرول */
+}
+.courses-content::-webkit-scrollbar {
+  height: 4px;
+}
+
+.courses-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #aa01ff5d, #1dcffc56); /* التدرج */
+  border-radius: 10px;
+}
+
+/* زر تنزيل الشهادة */
+.dawnlaad {
+  background-color: #aa01ff27; /* لون الخلفية شفاف */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dawnlaad a {
+  color: #efcfff;
+  font-weight: 400;
+  font-size: 13px;
+}
+/*  */
+.personal-info-section {
+  width: 100%;
+}
+.info-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.info-row .infosActiv {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.info-label {
+  width: 20%;
+}
+.info-value {
+  width: 100%;
+}
+
+/*  */
+.courespreis {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courespreis .preis {
+  display: flex;
+  gap: 10px;
+}
+.courespreis .preis .newpreis {
+  font-weight: 500;
+  transform: scale(1.5);
+}
+.courespreis .preis .vetuspreis {
+  color: var(--color-text-muted);
+  position: relative;
+}
+.courespreis .preis .vetuspreis::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  bottom: 10px;
+  height: 2px;
+  left: 0px;
+  background-color: var(--color-text-muted);
+}
+
+.learnmore {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.learnmore svg {
+  font-size: 12px;
+  transition: all 0.5s;
+}
+.learnmore:hover svg {
+  transform: translateX(-10px);
+}
+@media (max-width: 1300px) {
+  .enroled_couresescard {
+    width: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  .profilimgs {
+    width: 125%;
+    right: 5px;
+  }
+  .user-card .user-box {
+    gap: 8px;
+  }
+  .user-info h2 {
+    font-size: 18px;
+  }
+  .stat-item {
+    font-size: 13px;
+  }
+
+  .profil .mainn {
+    width: 50%;
+  }
+  .dashboard-sidebae {
+    width: 50%;
+  }
+  .enroled_couresescard {
+    width: 100%;
+  }
+  .personal-info-section .info-row:last-child {
+    flex-direction: column;
+  }
+
+     .info-label {
+  width: 100%;
+}
+}
+
+@media (max-width: 800px) {
+  .user-card {
+    display: flex;
+    padding: 10px;
+  }
+  .profilimgs {
+    width: 130%;
+    right: -20px;
+    top: -20px;
+  }
+  .avatar {
+    width: 70px;
+  }
+
+  .sidebae {
+    flex-direction: column;
+  }
+  .profil .mainn {
+    width: 100%;
+  }
+  .dashboard-sidebae {
+    width: 100%;
+  }
+    .info-label {
+  width: 30%;
+}
+}
+@media (max-width: 500px) {
+  .user-card {
+    display: flex;
+    padding: 0px;
+  }
+  .profilimgs {
+    width: 140%;
+    opacity: 0.2;
+
+    right: -29px;
+  }
+  .courses-container .courses-tabs li {
+    font-size: 15px;
+  }
+  .info-row .infosActiv {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  .info-label {
+  width: 40%;
+}
+}

@@ -1,0 +1,248 @@
+.cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto 0;
+}
+/* grid */
+.cnt .up-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.cnt .up-part .up-part-p1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(50deg, #7c4dff 0%, #00b4ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: var(--font-primary);
+  margin-bottom: 10px;
+}
+.cnt .up-part .up-part-p2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: var(--font-primary);
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.cnt .up-part .up-part-p3 {
+  color: var(--e-global-color-text);
+  text-align: center;
+  margin-bottom: 15px;
+  width: 80%;
+  margin: 15px auto;
+}
+.cnt .down-card {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, 350px);
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+/* BlogCard page */
+.container-Halil-BlogCard {
+  backdrop-filter: blur(900px);
+  border: 1px solid #313648;
+  border-radius: 15px;
+  padding: 15px;
+  height: 380px;
+}
+.cnt .down-card {
+  min-width: 90%;
+}
+
+.down-card a {
+  min-width: 80%;
+}
+
+.Halil-BlogCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 5px;
+  height: 100%;
+  width: 100%;
+}
+.Halil-BlogCard .imgCard {
+  width: 100%;
+  height: 225px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.BlogCard-p2 {
+  color: white;
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+.BlogCard-p3 {
+  color: var(--e-global-color-text);
+  font-family: var(--font-primary);
+  margin: 0;
+}
+
+.Halil-BlogCard .BlogDiv2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.Halil-BlogCard .BlogDiv2-div-1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Halil-BlogCard .BlogCard-p4 {
+  margin: 5px 0;
+  font-family: var(--font-primary);
+  font-weight: bold;
+}
+
+.Halil-BlogCard .BlogDiv2 .ArrowIcon {
+  transform: translateX(0px);
+  transition: transform 150ms ease;
+}
+.Halil-BlogCard:hover .ArrowIcon {
+  transform: translateX(-5px);
+}
+
+.blogJoinUs {
+  margin: 50px auto 30px;
+}
+
+@media screen and (max-width: 1124px) {
+  .up-part-p3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .cnt .down-card {
+    /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
+    width: 100%;
+    margin-top: 15px;
+  }
+  .up-part-p2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .BlogDiv2 {
+    padding-right: 10px;
+  }
+  .cnt .up-part .up-part-p3 {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 520px) {
+  .cnt .down-card {
+    min-width: 90%;
+  }
+
+  .down-card a {
+    min-width: 80%;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .cnt .down-card {
+    min-width: 100%;
+  }
+
+  .down-card a {
+    min-width: 20%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cnt .down-card {
+    min-width: 100%;
+  }
+
+  .down-card a {
+    min-width: 20%;
+    max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .cnt .down-card {
+    min-width: 100%;
+  }
+
+  .down-card a {
+    min-width: calc(90% / 3);
+  }
+}
+
+@media screen and (min-width: 1126px) {
+  .cnt .down-card {
+    min-width: 100%;
+  }
+
+  .down-card a {
+    min-width: calc(90% / 3);
+  }
+}
+
+@media screen and (min-width: 1225px) {
+  .cnt .down-card {
+    width: 95%;
+  }
+  .down-card a {
+    max-width: calc(90% / 3);
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .cnt .down-card {
+    width: 90%;
+  }
+
+  .down-card a {
+    max-width: calc(90% / 3);
+  }
+}
+
+@media screen and (min-width: 1425px) {
+  .cnt .down-card {
+    width: 80%;
+  }
+
+  .down-card a {
+    max-width: calc(90% / 3);
+  }
+}
+
+@media screen and (min-width: 1525px) {
+  .cnt .down-card {
+    width: 75%;
+  }
+
+  .down-card a {
+    min-width: calc(90% / 3);
+  }
+}
+@media screen and (min-width: 1625px) {
+  .cnt .down-card {
+    width: 65%;
+  }
+
+  .down-card a {
+    min-width: calc(90% / 3);
+  }
+}

@@ -1,0 +1,64 @@
+.order-H-header {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #1dcffc33, #aa01ff27);
+}
+.order-H-header span {
+  font-weight: 500;
+  width: 15%;
+  text-align: center;
+}
+
+.order_box div {
+  width: 15%;
+  text-align: center;
+}
+.order_box {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.order_box.even {
+  background: linear-gradient(to left, #d0f6ff2d, #c9a5db0e);
+}
+.status {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.status-review {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-done {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.order-H-orders {
+  margin-top: 15px;
+}
+
+.order-H-cotnainer {
+  overflow-x: auto;
+}
+
+.order-H-header,
+.order-H-orders {
+  min-width: 700px; /* عرض أكبر من الشاشة */
+}
+.order-H-cotnainer::-webkit-scrollbar {
+  height: 4px;
+}
+
+.order-H-cotnainer::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #aa01ff5d, #1dcffc56); /* التدرج */
+  border-radius: 10px;
+}

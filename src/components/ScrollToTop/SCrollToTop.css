@@ -1,0 +1,118 @@
+/* Scroll to Top Button - تصميم هادئ وجميل */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ac01ff 0%, #1dcffc 100%);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-text-light, #ffffff);
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(172, 1, 255, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(100px) scale(0.8);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(29, 207, 252, 0.4),
+    0 0 20px rgba(172, 1, 255, 0.3);
+}
+
+.scroll-to-top:active {
+  transform: translateY(-2px) scale(1);
+}
+
+/* تأثير النبض الخفيف */
+.scroll-to-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+}
+
+/* تأثير بريق داخلي */
+.scroll-to-top::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+/* الأيقونة */
+.scroll-to-top svg {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.scroll-to-top:hover svg {
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+  }
+}
+
+/* وضع الوضع الداكن */
+@media (prefers-color-scheme: dark) {
+  .scroll-to-top {
+    box-shadow: 0 4px 20px rgba(172, 1, 255, 0.4);
+  }
+
+  .scroll-to-top:hover {
+    box-shadow: 0 8px 30px rgba(29, 207, 252, 0.5),
+      0 0 25px rgba(172, 1, 255, 0.4);
+  }
+}

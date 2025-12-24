@@ -1,0 +1,108 @@
+/* Variables */
+:root {
+  --font-primary: 'Oswald', 'Tajawal', 'Noto Sans Arabic', 'Noto Naskh Arabic',
+    'Segoe UI', Tahoma, 'Segoe UI Emoji', sans-serif;
+
+  /* ---------------------------------------------------
+     🎨 الألوان الأساسية (Primary Colors)
+  --------------------------------------------------- */
+  --color-primary-purple: #ac01ff; /* بنفسجي Gradient */
+  --color-primary-blue: #1dcffc; /* أزرق سماوي */
+  /* استخدم الالون هدول مشان تسوي الحواف و الازرار بس اعمل دمج */
+  /* ---------------------------------------------------
+   (Typography Colors)
+  --------------------------------------------------- */
+  --color-text-light: #ffffff; /* النصوص البيضاء */
+  --color-text-muted: #9aa0a7; /* نص عند hover أو نص ثانوي */
+  --e-global-color-text: #9aa0a7; /* استخدام Elementor */
+
+  /* ---------------------------------------------------
+     🧱 خلفيات (Background)
+  --------------------------------------------------- */
+  --color-bg-dark: #1f232f; /* الخلفية الداكنة العامة */
+  /* هاد كمان مشان الكروت خلفيه الكروت */
+  --color-bg-box-border: #2a2e3b; /* حدود ناعمة للصناديق */
+
+  /* ---------------------------------------------------
+     🌟 الأيقونات والنجوم
+  --------------------------------------------------- */
+  --color-rating-star: #edb60a; /* لون النجوم */
+
+  /* ---------------------------------------------------
+     🕶 Shadows
+  --------------------------------------------------- */
+  --box-shadow: 7px 7px 15px 0px #0e1015;
+  /* sami */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: radial-gradient(circle at 20% 30%, #283a6b86 0%, transparent 40%),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(102, 34, 75, 0.475) 0%,
+      transparent 40%
+    ),
+    radial-gradient(circle at 50% 60%, #6e2b9675 0%, transparent 50%), #050010; /* خلفية */
+  color: #fff; /* لون النص */
+}
+
+/* Reset */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Container */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 90%;
+}
+
+/* --------------------------------------------- */
+/* Responsive Layout (Fixed & Corrected) */
+/* --------------------------------------------- */
+
+/* Small Screens */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+/* Medium Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Large Screens */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1300px) {
+  .container {
+    width: 1370px;
+  }
+}

@@ -1,0 +1,337 @@
+.contactCard {
+  min-height: fit-content;
+  position: relative !important;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 52px;
+  background-color: var(--color-bg-dark);
+  box-shadow: var(--box-shadow);
+  border: 2px solid var(--color-bg-box-border);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.joinUsCard {
+  padding: 20px 10px !important;
+}
+
+.contactCard > div:first-child,
+.contactCard > div:last-child {
+  padding: 30px;
+  height: 30vh !important;
+  margin-top: 0 !important;
+}
+.joinUsContent {
+  min-height: fit-content;
+}
+.contactCard * {
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.contactCard .joinUsContent {
+  padding: 0 !important;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactCard .joinUsDescription p {
+  max-width: 85%;
+  font-size: 0.86rem;
+  margin: 0 auto;
+}
+
+.joinUsContent span {
+  font-size: 1em;
+  font-weight: bolder;
+  background: linear-gradient(45deg, #ac01ff, #1dcffc); /* التدرج */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contactCard .sectionMainTitle {
+  font-size: 0.8rem;
+  width: fit-content;
+  margin: 0 auto !important;
+}
+
+.contactCard .sectionMainTitle h2 {
+  width: fit-content;
+  margin: 0 auto !important;
+}
+
+.contactCard .joinUsEmailContainer {
+  min-height: 40px;
+  min-width: 85%;
+  max-width: 90%;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contactCard .joinUsEmailContainer * {
+  height: inherit;
+  border-radius: 15px;
+  border: none;
+  min-width: 95%;
+}
+
+.contactCard .joinUsEmailContainer input {
+  width: 75%;
+  min-height: inherit;
+  padding-right: 20px;
+  color: white;
+  background-color: transparent;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-bg-box-border);
+  text-align: center;
+}
+
+.contactCard input::placeholder {
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  color: var(--color-text-muted);
+}
+
+.contactCard .joinUsContent .joinUsEmailContainer .joinNow {
+  min-width: 95%;
+  min-height: inherit;
+  position: relative;
+  z-index: 10;
+  padding: 0 10px;
+  font-size: 1rem;
+  color: white;
+  font-family: var(--font-primary);
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-purple) 30%,
+    var(--color-primary-blue)
+  );
+  transition: 0.5s;
+}
+
+.contactCard .joinUsContent .joinUsEmailContainer .joinNow:hover {
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-blue) 35%,
+    var(--color-primary-purple)
+  );
+}
+
+.cardImgs {
+  width: 100%;
+  min-height: fit-content;
+  position: absolute;
+  top: 0;
+  padding: 0;
+}
+
+.rightCorner {
+  right: 0px !important;
+}
+
+.leftCorner {
+  left: 0px !important;
+  top: 12px;
+}
+
+.contactCard .joinUsSectionImg img {
+  position: absolute;
+  display: none;
+  max-width: 70% !important;
+  min-height: 100%;
+  object-fit: contain;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+@media (min-width: 570px) {
+  .contactCard {
+    min-height: fit-content;
+    height: auto;
+  }
+
+  .joinUsDescription p {
+    font-size: 1rem;
+  }
+
+  .contactCard .joinUsEmailContainer {
+    min-height: 40px;
+    max-height: 45px;
+    min-width: 85%;
+    max-width: 90% !important;
+    gap: 15px;
+    flex-wrap: nowrap;
+  }
+
+  .contactCard .joinUsEmailContainer input {
+    min-height: inherit;
+    max-width: fit-content !important;
+    min-width: 75% !important;
+    flex: 1;
+    text-align: right;
+  }
+
+  .contactCard .joinUsContent .joinUsEmailContainer .joinNow {
+    min-height: inherit;
+    min-width: fit-content !important;
+    font-size: 1rem;
+  }
+
+  .contactCard .joinUsSectionImg img {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .joinUsCard,
+  .joinUsContent {
+    width: 80%;
+  }
+
+  .joinUsDescription p {
+    font-size: 1rem;
+  }
+
+  .contactCard .joinUsEmailContainer {
+    min-height: 40px;
+    max-height: 41px;
+    min-width: 75%;
+    max-width: 90%;
+    gap: 15px;
+  }
+
+  .contactCard .joinUsEmailContainer input {
+    min-height: inherit;
+    flex: 1;
+  }
+
+  .contactCard .joinUsContent .joinUsEmailContainer .joinNow {
+    min-height: inherit;
+    padding: 0 10px;
+    width: 15%;
+    font-size: 1.1rem;
+  }
+
+  .contactCard .joinUsSectionImg {
+    width: 120px;
+    max-width: 140px !important;
+    max-height: none;
+    min-height: 30vh !important;
+    height: auto;
+    height: fit-content !important;
+    flex-direction: column;
+    position: absolute;
+    top: -15px !important;
+    z-index: 0;
+  }
+
+  .contactCard .joinUsSectionImg img {
+    max-width: 80%;
+    min-width: 100% !important;
+    min-height: inherit;
+    position: absolute;
+    object-fit: contain;
+    display: block;
+  }
+
+  .contactCard .joinUsSectionImg .rightCorner {
+    position: absolute;
+    display: block;
+    top: 20px !important;
+  }
+
+  .contactCard .leftCorner {
+    position: absolute;
+    left: 0px !important;
+    display: block;
+    top: 0 !important;
+  }
+
+  .leftCorner img {
+    left: 0;
+  }
+  .rightCorner img {
+    right: 0;
+    top: 10px;
+  }
+}
+
+@media (min-width: 920px) {
+  .contactCard {
+    min-height: fit-content;
+  }
+
+  .contactCard .joinUsContent {
+    width: 80%;
+    gap: 15px;
+  }
+
+  .contactCard .sectionMainTitle {
+    font-size: 1.1rem;
+  }
+
+  .contactCard .joinUsDescription {
+    font-size: 1.1rem;
+  }
+
+  .contactCard .joinUsEmailContainer {
+    min-height: 50px;
+    min-width: 70%;
+    max-width: 85%;
+    gap: 15px;
+  }
+
+  .contactCard .joinUsEmailContainer input {
+    min-height: 50px;
+    flex: 1;
+  }
+
+  .contactCard .joinUsContent .joinUsEmailContainer .joinNow {
+    min-height: 100%;
+    padding: 12px 20px;
+    width: 15%;
+  }
+
+  .contactCard .joinUsSectionImg {
+    top: 0px !important;
+    min-height: 30vh !important;
+    width: 160px !important;
+  }
+
+  .contactCard .joinUsSectionImg img {
+    max-width: 80%;
+    min-width: inherit !important;
+    position: absolute;
+    min-height: inherit;
+    min-width: 100% !important;
+  }
+
+  .leftCorner {
+    left: 0px !important;
+  }
+
+  .rightCorner img {
+    top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .joinUsCard {
+    padding: 20px 0 40px !important;
+  }
+  .joinUsContent {
+    gap: 25px !important;
+  }
+
+  .contactCard .leftCorner {
+    left: 0 !important;
+  }
+  .contactCard .joinUsSectionImg img {
+    min-width: fit-content !important;
+    max-height: 10px !important;
+  }
+}

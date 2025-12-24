@@ -1,0 +1,183 @@
+body {
+  overflow-x: hidden;
+}
+.Text-Contact-us {
+  padding: 0;
+  margin: 0;
+}
+/* تخطيط الفورم */
+.Contact-layout {
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* خلفية الفورم */
+.form-login {
+  position: relative;
+  width: 66%;
+  min-height: 460px;
+  border-radius: 26px;
+  background: linear-gradient(var(--color-bg-dark), var(--color-bg-dark))
+      padding-box,
+    linear-gradient(135deg, #ac01ff, #1dcffc, #ac01ff) border-box;
+  border: 1px solid transparent;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 35px;
+  gap: 25px;
+  overflow: hidden;
+}
+/* مدخلات */
+.inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.inputs input,
+.inputs textarea {
+  font-family: var(--font-primary);
+  width: 95%;
+  height: 50px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid var(--color-bg-box-border);
+  background-color: var(--color-bg-dark);
+  padding: 15px;
+  font-size: 16px;
+  color: var(--color-text-light);
+}
+.inputs textarea {
+  height: 180px;
+  resize: none;
+  overflow: auto;
+}
+.inputs input::placeholder,
+.inputs textarea::placeholder {
+  color: var(--e-global-color-text);
+}
+/* زر الإرسال */
+.submit {
+  background: linear-gradient(135deg, #1dcffc, #ac01ff 70%);
+  cursor: pointer;
+  color: var(--color-text-light);
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.submit:hover {
+  background: linear-gradient(135deg, #ac01ff, #1dcffc 70%);
+}
+
+/* النص + الأيقونات */
+.Icon-container-merged {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  gap: 10px;
+}
+
+.Icon-container-merged h1,
+.Icon-container-merged span,
+.Icon-container-merged p {
+  color: var(--color-text-light);
+  margin: 0;
+  padding: 0;
+
+}
+.Icon-container-merged span,
+.Icon-container-merged p {
+  font-size: 15px;
+  color: var(--e-global-color-text);
+}
+/* الأيقونات */
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 16px;
+  background: linear-gradient(var(--color-bg-dark), var(--color-bg-dark))
+      padding-box,
+    linear-gradient(135deg, #ac01ff, #1dcffc, #ac01ff) border-box;
+  border: 1px solid transparent;
+}
+.icon-text h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: var(--color-text-light);
+}
+.icon-text p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--e-global-color-text);
+}
+.Contact-us-img {
+  position: absolute;
+  bottom: -30px;
+  right: 55%;
+  transform: translateX(2%);
+  width: 100%;
+}
+.Contact-us-img img {
+  width: 50%;
+}
+
+/*first mopile*/
+.form-login {
+  flex-direction: column;
+  width: 95%;
+  padding: 15px;
+}
+.Contact-us-img {
+  display: none;
+}
+.inputs input,
+.inputs textarea {
+  width: 100%;
+}
+.contact-join-us {
+  margin: 60px auto 30px;
+}
+.Container-team-son{
+  margin-top: 60px !important;
+}
+@media (min-width: 768px) {
+  .form-login {
+    flex-direction: row;
+  }
+  .Contact-us-img {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .form-login {
+    width: 73%;
+    padding: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-login {
+    width: 60%;
+  }
+}

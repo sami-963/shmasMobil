@@ -1,0 +1,412 @@
+header .headerImg {
+  width: 80%; /* حجم الصورة جوه الهيدر 80% */
+}
+
+header {
+  padding: 20px 0 !important; /* مسافة فوق وتحت الهيدر */
+  width: 100%; /* الهيدر ياخد كامل عرض الصفحة */
+  position: auto; /* مو ثابت ولا مطلق */
+  top: 0; /* حاطه فوق الصفحة */
+  border-bottom: solid 1px var(--color-bg-box-border); /* خط تحت الهيدر */
+}
+
+header .container {
+  max-width: 90%;
+}
+
+.logo {
+  width: 20%; /* مساحة اللوجو داخل الهيدر 20% */
+  justify-content: flex-start !important; /* يحط اللوجو على اليسار */
+}
+
+.links {
+  min-width: 33%; /* عرض روابط الهيدر */
+  margin-right: 30px; /* مسافة من اليمين */
+  margin-left: 30px; /* مسافة من اليسار */
+  gap: 30px;
+}
+
+.active {
+  background: linear-gradient(to right, #1dcffc, #ac01ff); /* تدرج لوني */
+  -webkit-background-clip: text; /* تأثير على نص */
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600; /* خط اثقل شوي للنص النشط */
+}
+
+.links ul li:hover a,
+.links ul li:hover .arrow-icon,
+.links ul .drawan .menu-list:hover {
+  color: var(--color-text-muted); /* لما تمرر الماوس يتغير اللون */
+}
+
+.serch {
+  width: 25%; /* مساحة البحث */
+  gap: 15px; /* مسافة بين العناصر جوه البحث */
+  justify-content: flex-end !important; /* يحطه على اليمين */
+}
+
+.arrow-icon {
+  margin-right: 10px; /* مسافة يمين الايقونة */
+  opacity: 0.8; /* شوية شفافية */
+  font-size: 16px; /* حجم الايقونة */
+  transition: all 0.7s; /* حركة سلسة */
+  color: var(--color-text-light); /* لون الايقونة */
+}
+
+.search-icon {
+  font-size: 19px; /* حجم ايقونة البحث */
+}
+
+.try-free-box {
+  border-radius: 16px; /* حواف مدورة */
+  padding: 1px; /* مساحة داخلية صغيرة */
+  display: inline-block; /* زي الزر */
+  background: linear-gradient(to left, #1dcffc, #ac01ff); /* تدرج للغلاف */
+  box-shadow: var(--box-shadow); /* ظل */
+  transition: all 0.7s; /* حركة سلسة */
+}
+
+.try-free-box .inner {
+  display: inline-block;
+  background: var(--color-bg-dark); /* لون خلفية داخلي */
+  border-radius: 16px; /* نفس حواف الغلاف */
+  padding: 10px 19px; /* مساحة داخلية للكتابة */
+  color: white; /* لون النص */
+  text-decoration: none; /* بدون خط تحت النص */
+  font-weight: bold; /* خط سميك */
+  text-align: center; /* النص في النص */
+}
+
+.try-free-box:hover {
+  transform: scale(0.88); /* يصغر شوي لما تمرر عليه */
+  background: linear-gradient(to right, #1dcffc, #ac01ff); /* يغير التدرج */
+}
+/* --------------------------- */
+.LongIn-box {
+  border-radius: 16px; /* حواف مدورة */
+  padding: 1px; /* مساحة داخلية صغيرة */
+  display: inline-block; /* زي الزر */
+  background: linear-gradient(to left, #1dcffc, #ac01ff); /* تدرج للغلاف */
+  box-shadow: var(--box-shadow); /* ظل */
+  transition: all 0.7s; /* حركة سلسة */
+}
+
+.LongIn-box .inner {
+  display: inline-block;
+  background: var(--color-bg-dark); /* لون خلفية داخلي */
+  border-radius: 16px; /* نفس حواف الغلاف */
+  color: white; /* لون النص */
+  text-decoration: none; /* بدون خط تحت النص */
+  font-weight: bold; /* خط سميك */
+  text-align: center; /* النص في النص */
+  min-width: 120px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.LongIn-box:hover {
+  transform: scale(0.88); /* يصغر شوي لما تمرر عليه */
+  background: linear-gradient(to right, #1dcffc, #ac01ff); /* يغير التدرج */
+}
+
+.drawan {
+  position: relative; /* عشان القائمة المنسدلة تتحدد بالنسبة له */
+}
+
+.drawan .menu {
+  position: absolute; /* يطلع فوق باقي العناصر */
+  display: flex; /* عرض العناصر عمودي */
+  flex-direction: column;
+  top: 59px; /* بعيد شوي عن الهيدر */
+  left: -3px; /* شوي لليسار */
+  background-color: var(--color-bg-dark); /* لون خلفية القائمة */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* ظل */
+  border-radius: 8px; /* حواف ناعمة */
+  z-index: 100; /* فوق باقي العناصر */
+  min-width: 200px; /* أقل عرض */
+}
+
+.drawan .menu .menu-list {
+  padding: 16px 30px 16px 20px; /* مساحة داخلية للقائمة */
+  color: var(--color-text-light); /* لون النص */
+  transition: all 0.3s; /* حركة سلسة */
+}
+
+.drawan .menu .menu-list.active {
+  background: linear-gradient(to right, #1dcffc15, #ac01ff15); /* تدرج شفاف */
+  font-weight: 600; /* خط أثقل */
+  border-right: 3px solid; /* خط على اليمين */
+  border-image: linear-gradient(to bottom, #1dcffc, #ac01ff) 1;
+  background: linear-gradient(to right, #1dcffc, #ac01ff); /* تدرج للنص */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.menu {
+  position: absolute;
+  background: white; /* خلفية بيضاء */
+  padding: 10px 0;
+  border-radius: 8px; /* حواف */
+  opacity: 0; /* مخفي بالبداية */
+  transform: translateY(10px); /* محاذاة تحت شوي */
+  max-height: 0; /* ما يبين */
+  overflow: hidden; /* يخفي الزيادة */
+  pointer-events: none; /* ما ينفع تضغط عليه */
+  transition: opacity 0.3s ease, transform 0.3s ease, max-height 0.4s ease; /* حركة سلسة */
+}
+
+.menu.show {
+  opacity: 1; /* يبين */
+  transform: translateY(0px); /* يرجع مكانه الطبيعي */
+  max-height: 300px; /* أقصى ارتفاع */
+  pointer-events: auto; /* ينفع تضغط عليه */
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 12px 14px;
+  background-color: #ffffff00; /* شفاف */
+  background-image: linear-gradient(
+    70deg,
+    #7c4dff 40%,
+    #00b4ff 100%
+  ); /* تدرج */
+  border-radius: 12px;
+  transition: all 1s;
+}
+
+.mobile-menu:hover {
+  background-image: linear-gradient(
+    100deg,
+    #7c4dff 40%,
+    #00b4ff 100%
+  ); /* يغير اتجاه التدرج */
+}
+
+@media (max-width: 1300px) {
+  header .links {
+    display: none; /* يختفي روابط الهيدر لو الشاشة صغيرة */
+  }
+  .container .serch {
+    display: none; /* يختفي البحث */
+  }
+  .logo {
+    width: 50%; /* يوسع اللوجو */
+    justify-content: flex-start !important; /* على اليسار */
+  }
+  .try-free-box .inner {
+    margin-top: 10p;
+    width: 100%;
+    display: inline-block;
+    background: var(--color-bg-dark);
+    border-radius: 16px;
+    padding: 12px 87px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+  }
+  .try-free-box {
+    margin-top: 15px;
+    border-radius: 16px;
+    padding: 2px;
+  }
+  .LongIn-box {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 2px;
+  }
+  .LongIn-box .inner {
+    width: 100%;
+    padding: 12px 25px;
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1300px) {
+  header {
+    padding: 20px 0 !important;
+  }
+  .mobile-menu {
+    display: none; /* يختفي زر الموبايل لو الشاشة كبيرة */
+  }
+}
+.side-header .logo img {
+  width: 80%; /* صورة اللوجو بالقائمة الجانبية */
+}
+
+.side-header .logo {
+  width: 80%; /* عرض اللوجو */
+  justify-content: flex-start !important; /* على اليسار */
+}
+
+/* القائمة الجانبية */
+.side-menu {
+  position: fixed; /* ثابت عالصفحة */
+  top: 0;
+  right: -500px; /* مخفية برا الشاشة */
+  width: 280px; /* عرضها */
+  height: 100%; /* طول الشاشة */
+  background: #151a2d; /* لون الخلفية */
+  padding: 25px; /* مسافة داخلية */
+  transition: 0.4s ease; /* حركة سلسة */
+  z-index: 9999; /* فوق كل شيء */
+}
+
+.side-menu.show {
+  right: 0; /* تظهر من اليمين */
+}
+
+/* الهيدر بالقائمة */
+.side-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px; /* مسافة تحت الهيدر */
+}
+
+.close-btn {
+  font-size: 28px; /* حجم الايقونة */
+  cursor: pointer; /* شكل الماوس */
+  color: #fff; /* لونها أبيض */
+}
+
+/* الروابط */
+.side-link {
+  display: block;
+  color: #fff;
+  padding: 12px 0; /* مسافة فوق وتحت */
+  font-size: 18px; /* حجم النص */
+  transition: 0.3s;
+}
+
+.side-link:hover {
+  color: #6d5dfc; /* لون لما تمرر الماوس */
+}
+
+/* Dropdown */
+.side-dropdown {
+  margin-bottom: 20px; /* مسافة تحت */
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff; /* لون النص */
+  padding: 12px 0;
+  cursor: pointer; /* لما تضغط عليه */
+}
+
+.drop-icon {
+  font-size: 16px;
+}
+
+/* القائمة المنسدلة */
+.dropdown-menu {
+  padding-left: 10px; /* مسافة من اليسار */
+  display: flex;
+  flex-direction: column; /* العناصر فوق بعض */
+}
+
+.dropdown-item {
+  color: #cfcfcf; /* لون العناصر */
+  padding: 8px 0;
+  transition: 0.3s;
+}
+
+.dropdown-item:hover {
+  color: #6d5dfc; /* لما تمرر الماوس */
+}
+/* ACTIVE COLOR INSIDE SIDE MENU */
+.active-text {
+  background: linear-gradient(to right, #1dcffc, #ac01ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* ACCORDION DROPDOWN */
+.side-dropdown {
+  margin: 20px 0; /* مسافة فوق وتحت */
+  cursor: pointer;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  color: white;
+  font-size: 18px;
+}
+
+.drop-icon {
+  transition: 0.3s; /* حركة سلسة */
+}
+
+.drop-icon.rotate {
+  transform: rotate(180deg); /* تدوير الايقونة */
+}
+
+.dropdown-menu {
+  max-height: 0; /* مخفية بالبداية */
+  overflow: hidden; /* يخفي الزائد */
+  transition: 0.3s ease; /* حركة سلسة */
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px; /* مسافة من اليسار */
+  gap: 10px; /* مسافة بين العناصر */
+}
+
+.dropdown-menu.show {
+  max-height: 300px; /* لما تظهر */
+}
+
+.dropdown-item {
+  color: #d3d3d3; /* لون النص */
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+.dropdown-item:hover {
+  color: var(--color-text-muted); /* لما تمرر الماوس */
+}
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 5px 7px;
+  background-color: #ffffff00; /* شفاف */
+  background-image: linear-gradient(70deg, #7c4dff 40%, #00b4ff 100%);
+  border-radius: 12px;
+  transition: all 1s;
+}
+.close-btn:hover .MdClose {
+  transform: rotate(90deg);
+}
+.MdClose {
+  transition: all 1s;
+
+  font-size: 24px; /* حجم ايقونة الإغلاق */
+}
+
+@media (min-width: 920px) {
+  header {
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 20px 0 !important;
+  }
+}

@@ -1,0 +1,261 @@
+/* رأس الملف الشخصي */
+.profil .profil_header {
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: var(--box-shadow); /* تأثير الظل */
+  width: 100%;
+  display: flex;
+  border: solid 1px #1dcffc;
+  justify-content: space-between; /* توزيع العناصر على الجانبين */
+  /* background: radial-gradient(circle at 20% 30%, #283a6b86 0%, transparent 40%),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(102, 34, 75, 0.475) 0%,
+      transparent 100%
+    ),
+    radial-gradient(circle at 50% 60%, #6e2b9675 0%, transparent 50%), #050010; خلفية متدرجة متعددة */
+  /* background-image: url(/public/rpifil.imgheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ */
+  border-radius: 15px;
+  position: relative;
+}
+.profilimgs {
+  position: absolute;
+  width: 100%;
+  left: -5px;
+  top: -49px;
+  z-index: -55;
+  opacity: 0.3;
+  overflow: hidden;
+}
+/* الحاوية الرئيسية للملف الشخصي */
+.profil {
+  margin-top: 50px;
+  gap: 30px; /* المسافة بين العناصر */
+  flex-direction: column; /* ترتيب العناصر عمودي */
+}
+
+/* صورة الملف الشخصي داخل الرأس */
+.profil .profil_header .profilimg {
+  width: 250px;
+  transition: all 1s;
+  border-radius: 50%; /* تجعل الصورة دائرية */
+  margin: 10px;
+  opacity: 0.6;
+}
+
+/* بطاقة المستخدم */
+.user-card {
+  display: flex;
+  padding: 50px;
+  flex-direction: row-reverse; /* ترتيب العناصر من اليمين لليسار */
+  align-items: flex-end; /* محاذاة العناصر لأسفل */
+}
+
+.user-card .user-box {
+  display: flex;
+  gap: 20px; /* المسافة بين عناصر البوكس */
+}
+
+/* معلومات المستخدم */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-info h2 {
+  margin-bottom: 5px;
+}
+
+.user-info .stats {
+  display: flex;
+  gap: 20px; /* المسافة بين الإحصائيات */
+}
+
+/* صورة مصغرة للمستخدم */
+.avatar {
+  width: 100px;
+  margin: 3px;
+  border-radius: 50%;
+}
+
+/* اللوحة الرئيسية */
+.profil .mainn {
+  width: 75%; /* عرض اللوحة */
+  border-radius: 15px;
+}
+
+/* الحاوية الجانبية */
+.sidebae {
+  background: radial-gradient(circle at 20% 30%, #283a6b33 0%, transparent 40%),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(102, 34, 75, 0.475) 0%,
+      transparent 100%
+    ),
+    radial-gradient(circle at 50% 60%, #6f2b963a 0%, transparent 50%), #050010;
+  border-radius: 20px;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: row; /* ترتيب عناصر القائمة أفقياً */
+}
+
+/* البنر */
+.banner {
+  display: flex;
+  background: linear-gradient(to right, #1dcffc, #ac01ff);
+  border-radius: 50%;
+}
+
+/* القسم الجانبي للوحة التحكم */
+.dashboard-sidebae {
+  width: 25%; /* عرض القائمة الجانبية */
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* عناصر القائمة */
+.dashboard-sidebae .menu-item {
+  padding: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 11px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.dashboard-sidebae .menu-item h4 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+  padding: 13px 0;
+  font-size: 19px;
+  font-weight: 500;
+  color: white;
+  margin: 0px 0px 22px 0px;
+}
+
+.dashboard-sidebae .menu-item ul {
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-sidebae .menu-item ul li {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+}
+
+.dashboard-sidebae .menu-item ul li:last-child {
+  margin-bottom: 0px;
+}
+
+/* روابط القائمة */
+.menu-item .linksboxMenu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  gap: 10px;
+  background: none; /* إزالة الخلفية الافتراضية للزر */
+  border: none; /* إزالة إطار الزر */
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* تأثير عند المرور بالماوس */
+.menu-item .linksboxMenu:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* القسم النشط */
+.menu-item .linksboxMenu.activees {
+  background: linear-gradient(to right, #1dcffc41, #aa01ff44);
+  color: white;
+}
+
+/* إزالة حدود محددة للقائمة */
+.menu-item li:last-child,
+.menu-item li:nth-child(7) {
+  border-bottom: none !important;
+}
+
+/* حجم النص داخل span في الروابط */
+.menu-item a span {
+  font-size: 16px;
+}
+
+/* حاوية الخلفية العامة */
+.bacsidebae {
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  padding: 2px;
+  background: linear-gradient(to right, #1dcffc, #ac01ff);
+}
+@media (max-width: 1300px) {
+  .profilimgs {
+    top: 3px;
+  }
+}
+@media (max-width: 1000px) {
+  .profilimgs {
+    width: 125%;
+    right: 5px;
+  }
+  .user-card .user-box {
+    gap: 8px;
+  }
+  .user-info h2 {
+    font-size: 18px;
+  }
+  .stat-item {
+    font-size: 13px;
+  }
+  .dashbord-boxs .D-box {
+    width: 100%;
+  }
+  .profil .mainn {
+    width: 50%;
+  }
+  .dashboard-sidebae {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .user-card {
+    display: flex;
+    padding: 10px;
+  }
+  .profilimgs {
+    width: 130%;
+    right: -20px;
+    top: -20px;
+  }
+  .avatar {
+    width: 70px;
+  }
+
+  .sidebae {
+    flex-direction: column;
+  }
+  .profil .mainn {
+    width: 100%;
+  }
+  .dashboard-sidebae {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .courses-container .courses-tabs {
+    justify-content: center !important;
+    gap: 20px;
+  }
+
+}

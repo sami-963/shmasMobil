@@ -1,0 +1,231 @@
+.pageMainSection {
+  max-width: 90%;
+  height: 30vh;
+  background-size: cover;
+  color: white;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: right;
+  height: 100% !important;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.sectionTitle .heroImg {
+  margin-top: -20;
+  min-width: fit-content;
+  height: 100% !important;
+  justify-content: center;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  max-width: 30%;
+ 
+}
+
+.heroImg img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.title {
+  position: absolute;
+  right: 20%;
+  top: 65%;      
+  text-align: right;
+ 
+}
+
+.pageMainSection .sectionTitle h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 20px;
+  height: 50px;
+  text-align: center ;
+  font-weight: bolder;
+  background: linear-gradient(45deg, #ac01ff, #1dcffc); /* التدرج */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionTitle p {
+  font-size: 1rem;
+  line-height: 18px;
+  text-align: center;
+  word-spacing: 2px;
+  margin-top: -30px;
+}
+
+@media (min-width: 578px) {
+  .pageMainSection {
+    min-height: 40vh;
+  }
+  .sectionTitle {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .sectionTitle > div {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sectionTitle .heroImg {
+    margin-top: -20;
+    width: 70%;
+    height: 100% !important;
+    justify-content: center;
+    opacity: 0.4;
+    position: absolute;
+    top: 0px;
+  }
+
+  .heroImg img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .pageMainSection .title {
+    position: absolute;
+    top: 150px;
+    width: fit-content;
+  }
+
+  .sectionTitle h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    min-height: 50px;
+  }
+
+  .sectionTitle p {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  
+}
+
+@media (min-width: 768px) {
+  .pageMainSection {
+    min-height: 40vh;
+  }
+  .sectionTitle .heroImg {
+    margin-top: -20;
+    width: 60%;
+    height: 100% !important;
+    justify-content: center;
+    opacity: 0.3;
+    position: absolute;
+    top: 0px;
+  }
+
+  .heroImg img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .title {
+    position: absolute;
+    max-width: fit-content;
+    right: 20% !important;
+    top: 65% !important;
+    transform: none !important;
+   
+  }
+
+  .sectionTitle h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sectionTitle p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media (min-width: 920px) {
+  .pageMainSection {
+    width: 100% !important;
+    height: 50vh;
+    background-size: cover;
+    color: white;
+    margin: 0 auto;
+  }
+
+  .pageMainSection .sectionTitle {
+    width: fit-content;
+    text-align: right;
+    height: 100%;
+    width: 90%;
+    justify-content: space-between !important;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .pageMainSection .title {
+    margin-top: -50px;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .title * {
+    text-align: right;
+    min-width: 100%;
+  }
+
+  .sectionTitle h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: right !important;
+  }
+
+  .sectionTitle p {
+    font-size: 1rem;
+    line-height: 18px;
+    text-align: right !important;
+    word-spacing: 2px;
+  }
+
+  .pageMainSection .sectionTitle .heroImg {
+    flex: 0 0 auto;
+    min-width: 50%;
+    opacity: 1 !important;
+    position: auto !important;
+    left: 100px;
+  }
+
+  .heroImg img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .sectionTitle h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 50px;
+  }
+
+  .sectionTitle p {
+    font-size: 1rem;
+    text-align: center;
+  }
+   .title {
+    right: 20% !important;
+    top: 65% !important;
+    transform: none !important;
+  }
+}

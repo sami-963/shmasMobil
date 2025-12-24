@@ -1,0 +1,19 @@
+.policyItem {
+  gap: 0;
+}
+
+.policyItem h3 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .policyItem h3 {
+    max-width: 25%;
+    min-width: 20%;
+    word-break: break-all;
+  }
+
+  .descriptons {
+    flex: 1;
+  }
+}

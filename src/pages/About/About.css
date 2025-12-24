@@ -1,0 +1,576 @@
+section {
+  margin: 100px auto;
+  width: 100%;
+  overflow: visible;
+}
+/* shareopinion */
+button {
+  font-family: var(--font-primary);
+}
+
+.aboutPage .container {
+  max-width: 90%;
+}
+
+.about-image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.aboutPage .about-image-style {
+  margin-top: 40px !important;
+}
+
+.about-image-style {
+  max-width: 100% !important;
+}
+
+.about-image-style img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.aboutPage .learnAndCreateSection {
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+.aboutPage .learnAndCreateSectionImg {
+  max-width: 40%;
+}
+
+.aboutPage .learnAndCreateSectionImg img {
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.aboutPage .sectionContent {
+  width: 100%;
+  min-height: fit-content;
+  box-sizing: border-box;
+  padding: 10px 40px;
+}
+/* red */
+.aboutPage .smallTitle span {
+  font-size: 1.5em;
+  font-weight: bolder;
+  background: linear-gradient(45deg, #ac01ff, #1dcffc); /* التدرج */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutPage .sectionMainTitle h2 {
+  font-size: 1.7em;
+  min-width: 100% !important;
+}
+
+.aboutPage .sectionDescription {
+  width: 85%;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* Progress Bars */
+.aboutPage .progressItem {
+  height: 50px;
+  margin: 15px auto;
+}
+
+.aboutPage .label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.aboutPage .progressBar {
+  width: 100%;
+  height: 10px;
+  background: #3f3f46;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.aboutPage .progress {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.aboutPage .progress1 {
+  width: 80%;
+  background: linear-gradient(
+    to left,
+    var(--color-primary-purple),
+    var(--color-primary-blue)
+  );
+}
+
+.aboutPage .progress2 {
+  width: 92%;
+  background: linear-gradient(
+    to left,
+    var(--color-primary-blue),
+    var(--color-primary-purple)
+  );
+}
+
+.aboutPage .progress3 {
+  width: 74%;
+  background: linear-gradient(
+    to left,
+    var(--color-primary-purple),
+    var(--color-primary-blue)
+  );
+}
+
+.aboutPage .readMore {
+  margin-top: 30px;
+  padding: 12px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-purple) 25%,
+    var(--color-primary-blue)
+  );
+  color: white;
+  transition: 0.3s;
+}
+
+.aboutPage .readMoreBtn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.aboutPage .learnAndCreateSectionImg {
+  min-width: 100%;
+  height: fit-content;
+  justify-content: center;
+  order: 1;
+}
+
+.aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.learnAndCreateSection .sectionMainTitle h2 {
+  font-size: 1.5rem;
+  min-width: 100%;
+}
+.learnAndCreateSection .smallTitle {
+  font-size: 0.8rem;
+}
+.learnAndCreateSection .sectionDescription {
+  font-size: 1rem;
+}
+
+.learnAndCreateSection .sectionContent {
+  order: 0;
+}
+.aboutPage .whyChooseUs {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutPage .whyChooseUs .smallTitle,
+.aboutPage .whyChooseUs .sectionMainTitle,
+.aboutPage .whyChooseUs .sectionDescription {
+  margin: 5px auto;
+}
+
+.aboutPage .whyChooseUs div {
+  height: fit-content;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.aboutPage .whyChooseUs .sectionCards {
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 300px;
+  padding: 0;
+  gap: 15px;
+  margin: 20px auto;
+}
+
+.aboutPage .sectionCards .cardContainer {
+  position: relative;
+  min-width: 90%;
+  height: auto;
+  max-height: 400px !important;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 25px 35px;
+  background-color: var(--color-bg-dark);
+  box-shadow: var(--box-shadow);
+  border: 2px solid var(--color-bg-box-border);
+  transition: transform 0.5s ease;
+  overflow: visible;
+}
+
+.aboutPage .sectionCards .cardContainer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-purple) 25%,
+    var(--color-primary-blue)
+  );
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.aboutPage .sectionCards .cardContainer::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: calc(20px - 2px);
+  background: var(--color-bg-dark);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.aboutPage .sectionCards .cardContainer > * {
+  position: relative;
+  z-index: 2;
+}
+
+.aboutPage .sectionCards .cardContainer:hover {
+  border-color: transparent;
+}
+
+.aboutPage .sectionCards .cardContainer:hover::before {
+  opacity: 1;
+}
+
+.aboutPage .sectionCards .cardContainer * {
+  text-align: right;
+  margin: 0;
+}
+
+.aboutPage .cardImg {
+  transition: transform 0.5s ease;
+}
+
+.aboutPage .cardImg img {
+  height: 75px;
+  width: 75px;
+}
+
+.aboutPage .cardContainer:hover .cardImg {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.aboutPage .cardSub {
+  color: var(--color-text-muted);
+}
+
+.aboutPage .sectionHeader {
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.aboutPage .sectionHeader .headerText {
+  flex-direction: column;
+  align-items: flex-start;
+  max-height: 100px;
+  width: 100%;
+}
+
+.aboutPage .sectionHeader .headerText .sectionMainTitle h2 {
+  font-size: 1.7rem;
+  margin: 0 !important;
+}
+
+.aboutPage .angleIcon {
+  width: fit-content;
+  border: none;
+}
+
+.aboutPage .coursesSectionTitle {
+  margin: 150px auto 0;
+}
+
+.aboutPage .cards {
+  margin: 0 auto 100px;
+  max-width: 85%;
+}
+
+.aboutShareOpinoin {
+  margin-top: 50px;
+}
+
+.aboutJoinUs {
+  margin-top: 75px;
+}
+
+.aboutPage .ourTeam {
+  margin: 50px auto;
+  flex-wrap: wrap !important;
+}
+
+.aboutPage .Members {
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.aboutPage .ourTeam .sectionMainTitle h2 {
+  font-size: 2em !important;
+}
+
+.aboutPage .sectionHeader button {
+  font-family: var(--font-primary);
+  margin-top: 30px;
+  padding: 10px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  transition: all 0.3s;
+  background: linear-gradient(45deg, #ac01ff, #1dcffc) border-box;
+}
+
+.aboutPage button:hover {
+  background: linear-gradient(45deg, #1dcffc, #ac01ff) border-box;
+}
+
+@media (min-width: 576px) {
+  .about-image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-image-style {
+    max-width: 70% !important;
+  }
+
+  .about-image-style img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .aboutPage .learnAndCreateSection {
+    gap: 30px;
+  }
+
+  .aboutPage .learnAndCreateSectionImg {
+    min-width: 100%;
+    height: 45vh;
+    justify-content: center;
+    order: 1;
+    display: none;
+  }
+
+  .aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+    min-height: 100%;
+    min-width: 50%;
+    max-width: 70%;
+  }
+
+  .learnAndCreateSection .sectionContent {
+    order: 0;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards .cardContainer {
+    max-width: 90%;
+  }
+
+  .aboutPage .sectionHeader button {
+    padding: 15px 35px;
+  }
+
+  .aboutPage .Members {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    min-width: 90%;
+  }
+
+  .about-image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-image-style {
+    max-width: 70% !important;
+  }
+
+  .about-image-style img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .aboutPage .learnAndCreateSectionImg {
+    min-width: 100%;
+    height: auto;
+    justify-content: center;
+    display: none;
+    order: 1;
+    margin: 0;
+  }
+
+  .aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+    min-height: auto;
+    min-width: auto;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards .cardContainer {
+    max-width: 90%;
+  }
+
+  .aboutPage .ourTeam .sectionHeader .headerText {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 920px) {
+  .about-image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-image-style {
+    max-width: 40% !important;
+  }
+
+  .about-image-style img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .aboutPage .learnAndCreateSection {
+    flex-wrap: nowrap !important;
+    margin: 75px auto 0;
+  }
+
+  .aboutPage .learnAndCreateSectionImg {
+    min-width: 40%;
+    max-width: 100%;
+    height: 75vh;
+    order: 0;
+    display: block;
+  }
+
+  .aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+    min-height: 100%;
+    max-width: 100%;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards {
+    width: 100%;
+    min-height: 70vh;
+    flex-wrap: nowrap;
+    max-height: 75vh;
+  }
+
+  .aboutPage .whyChooseUs .cardContainer {
+    width: 33%;
+    min-width: 30%;
+    max-width: 31%;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards {
+    min-height: 65vh;
+    margin-top: 20px;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards .cardContainer {
+    min-height: inherit;
+  }
+
+  .aboutPage .ourTeam {
+    min-width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-image-style {
+    max-width: 40% !important;
+  }
+
+  .about-image-style img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .aboutPage .learnAndCreateSectionImg {
+    min-width: 35%;
+    max-width: 60%;
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+    min-height: 90%;
+    max-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards {
+    width: 90%;
+    min-height: 50vh;
+    height: 60vh;
+  }
+
+  .aboutPage .whyChooseUs .cardContainer {
+    width: 30%;
+  }
+
+  .aboutPage .Members {
+    max-width: 80%;
+    margin: 50px auto;
+    justify-content: space-around !important;
+    gap: 0;
+  }
+}

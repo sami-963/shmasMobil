@@ -1,0 +1,153 @@
+.methodologyStatss {
+  display: grid; /* شبكة للدوائر */
+  grid-template-columns: repeat(2, 1fr); /* عمودين متساويين */
+  gap: 25px;
+  margin-top: 20px;
+}
+/* img */
+
+.methodologySecti_contacht {
+  width: 50%; /* نص العرض */
+}
+
+.methodologyStatss {
+  width: 50%; /* نص العرض */
+}
+/* more_baout-titel */
+.methodologySection_text {
+  box-shadow: 10px 10px 25px 0px #0e1015;
+  background-color: var(--color-bg-dark); /* لون الخلفية */
+  padding: 30px 50px; /* مساحة داخل الصندوق */
+  border-radius: 30px; /* حواف مدورة */
+  margin-bottom: 50px;
+}
+
+.statBoxx {
+  display: flex;
+  flex-direction: column; /* ترتيب عمودي */
+  align-items: center; /* تمركز */
+  text-align: center;
+  color: white;
+}
+
+/* الدائرة */
+.circlee {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+.circlee::before {
+  content: '';
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  background: var(--color-bg-dark); /* حلقة داخلية */
+  border-radius: 50%;
+  z-index: 1;
+}
+.circlee span {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+}
+
+.core-titel {
+  background: linear-gradient(50deg, #7c4dff 0%, #00b4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  margin: 0;
+}
+.more_baout-titel {
+  font-size: 42px;
+  margin: 5px;
+}
+.more_baout-titel span {
+  background: linear-gradient(50deg, #7c4dff 0%, #00b4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text_more {
+  color: var(--color-text-muted);
+}
+
+.featureLists {
+  padding: 0;
+}
+.featureLists .flex p {
+  margin: 0;
+  padding: 5px;
+}
+.featureLists .featurimg {
+  position: relative;
+}
+.featurimg img {
+  position: absolute;
+  right: 250px;
+  bottom: -80px;
+}
+.featureLists .flex {
+  justify-content: flex-start;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .featurimg img {
+    width: 182px;
+    right: 187px;
+    bottom: -43px;
+  }
+}
+@media (max-width: 800px) {
+  .methodologySecti_container {
+    flex-direction: column;
+  }
+  .methodologySecti_contacht {
+    width: 100%;
+  }
+  .methodologyStatss {
+    width: 100%;
+  }
+  .featurimg img {
+    display: none;
+    width: 178px;
+    right: 219px;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 15px;
+  }
+  .featurimg img {
+    display: none !important;
+  }
+  .methodologySection_text {
+    padding: 30px 24px;
+
+    margin: 10px 20px;
+  }
+  .methodologyStatss {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .circlee {
+    width: 146px;
+    height: 146px;
+  }
+  .circlee::before {
+    width: 139px;
+    height: 139px;
+  }
+  .more_baout-titel {
+    font-size: 30px;
+  }
+
+  .featureLists {
+    margin: 10px 0;
+  }
+}

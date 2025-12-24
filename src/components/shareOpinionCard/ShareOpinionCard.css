@@ -1,0 +1,169 @@
+.contactCard {
+  height: auto;
+  box-sizing: border-box;
+  justify-content: center !important;
+  text-align: center;
+  border-radius: 25px;
+  background-color: var(--color-bg-dark);
+  box-shadow: var(--box-shadow);
+  border: 2px solid var(--color-bg-box-border);
+}
+
+.shareOpinoin {
+  padding: 0;
+  min-height: 70vh;
+}
+
+.contactCard .ShareOpinionCardContent {
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+  max-height: 45vh;
+  min-width: 90%;
+  position: relative;
+  z-index: 2;
+  gap: 25px;
+  /* border: 1px solid red; */
+}
+.contactCard * {
+  margin: 0;
+}
+
+.contactCard .ShareOpinionSmallTitle span {
+  font-size: 1.1em;
+  font-weight: bolder;
+  background: linear-gradient(45deg, #ac01ff, #1dcffc); /* التدرج */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contactCard .contactUs button {
+  /* margin-top: 15px; */
+  padding: 10px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-purple) 25%,
+    var(--color-primary-blue)
+  );
+}
+
+.contactCard .ShareOpinionSectionImg {
+  max-width: 30%;
+  min-width: 20%;
+  max-height: 100%;
+  min-height: fit-content;
+  height: auto;
+  flex-direction: column;
+}
+
+.contactCard .ShareOpinionSectionImg img {
+  min-height: auto;
+  max-width: 100%;
+  min-width: 50%;
+  opacity: 0.4;
+  position: absolute;
+  display: none;
+}
+
+@media (min-width: 578px) {
+  .contactCard {
+    min-height: fit-content;
+  }
+
+  .contactCard .ShareOpinionCardContent {
+    min-height: fit-content;
+    min-width: 90%;
+    padding: 10px 0;
+  }
+
+  .shareOpinoin {
+    padding: 0 50px;
+  }
+
+  .contactCard .contactUs button {
+    padding: 15px 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactCard {
+    min-height: 50vh;
+    max-height: fit-content;
+  }
+
+  .contactCard .ShareOpinionCardContent {
+    padding: 0;
+  }
+
+  .contactCard .ShareOpinionSectionImg img {
+    min-height: auto;
+    min-width: auto;
+    max-width: 35%;
+  }
+
+  .contactCard .ShareOpinionSectionImg .ShareOpinionSubsucribeFirstImg {
+    top: -5%;
+    right: 0%;
+    display: block;
+  }
+
+  .contactCard .ShareOpinionSectionImg .ShareOpinionSubsucribeLastImg {
+    top: -5%;
+    left: 0%;
+    display: block;
+  }
+}
+
+@media (min-width: 920px) {
+  .contactCard {
+    min-width: 90%;
+    max-height: 45vh;
+    min-height: fit-content;
+  }
+
+  .contactCard .ShareOpinionCardContent {
+    min-height: fit-content;
+    min-width: 90%;
+    position: relative;
+    padding: 0;
+  }
+
+  .contactCard .ShareOpinionSectionImg {
+    opacity: 0.6;
+  }
+
+  .contactCard .ShareOpinionSectionImg img {
+    max-width: 40%;
+    min-width: 30%;
+    position: absolute;
+  }
+
+  .contactCard .ShareOpinionSectionImg .ShareOpinionSubsucribeFirstImg {
+    top: 0%;
+    right: -5%;
+    display: block;
+  }
+  .contactCard .ShareOpinionSectionImg .ShareOpinionSubsucribeLastImg {
+    top: 0%;
+    left: -5%;
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contactCard {
+    min-height: fit-content;
+  }
+
+  .contactCard .ShareOpinionCardContent {
+    min-width: 60%;
+  }
+}

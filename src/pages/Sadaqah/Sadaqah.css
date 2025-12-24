@@ -1,0 +1,213 @@
+/*hero*/
+.SadaqahPage{
+  margin-bottom: 0 !important;
+}
+.sadaqah-hero-section {
+  text-align: center;
+  margin: 0 auto 50px;  
+  padding: 0 20px;        
+  max-width: 1100px;     
+}
+
+.sadaqah-hero-section h1 {
+  background: linear-gradient(45deg, #ac01ff, #1dcffc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 38px;
+}
+
+.sadaqah-hero-section p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  direction: rtl;
+  word-break: break-word;
+}
+
+/*contact*/
+
+.sadaqah-Contact-options {
+  padding: 80px 0 100px;
+}
+
+/* النص العلوي */
+.sadaqah-Contact-text {
+  text-align: center;
+  margin: 0 auto 50px;      
+  padding-bottom: 70px;
+  max-width: 700px;       
+  }
+
+.sadaqah-Contact-text h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+    background: linear-gradient(45deg, #ac01ff, #1dcffc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block;
+}
+
+.sadaqah-Contact-text p {
+  font-size: 18px;
+  max-width: 550px;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  margin: 0 auto;
+}
+
+/* حاوية الكروت */
+.sadaqah-Contact-cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;   
+  flex-wrap: wrap;
+}
+
+/* الكرت */
+.sadaqah-contact-card {
+  position: relative;
+  width: 330px;
+  background: linear-gradient(#1f232f, #1f232f) padding-box,
+    linear-gradient(90deg, #ac01ff, #1dcffc) border-box;
+  border: 1px solid transparent;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  padding: 60px 30px 30px;
+  text-align: center;
+  transition: 0.3s;
+  backdrop-filter: blur(6px);
+}
+
+.sadaqah-contact-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(#1f232f, #1f232f) padding-box,
+    linear-gradient(90deg, #1dcffc, #ac01ff) border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+/*الايقونات*/
+.floating-icon {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #1b1b1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+ 
+  border: 3px solid #ffffff22;
+  box-shadow: 0 4px 12px #00000050;
+}
+
+/* عنوان كل كرت */
+.sadaqah-contact-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* النص داخل الكرت */
+.sadaqah-contact-card p {
+  font-size: 16px;
+  color: var(--color-text-light);
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.card-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* media */
+@media (max-width: 576px){
+   .sadaqah-hero-section{
+     margin: 0 auto 0 !important;  
+   }
+  .sadaqah-Contact-options {
+    padding: 30px 0 100px;
+  }
+}
+/*تابليت*/
+@media (max-width: 768px) {
+  .SadaqahPage{
+     margin: 30px auto 40px;  
+  }
+  .sadaqah-hero-section {
+    margin-bottom: 40px;
+    padding: 0 16px;
+  }
+
+  .sadaqah-hero-section h1 {
+    font-size: 28px;
+  }
+
+  .sadaqah-hero-section p {
+    font-size: 16px;
+    max-width: 100%;
+    line-height: 1.8;
+  }
+  .sadaqah-Contact-cards{
+    margin-bottom: 0;
+  }
+  .sadaqah-Contact-text {
+    margin: 0 auto 30px;
+    padding-bottom: 40px;
+  }
+
+  .sadaqah-Contact-text h2 {
+    font-size: 26px;
+  }
+
+  .sadaqah-Contact-text p {
+    font-size: 16px;
+  }
+
+  .sadaqah-contact-card {
+    width: 90%;
+    max-width: 360px;
+    margin: 0 auto 20px;   
+  }
+   .sadaqah-Contact-options {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .sadaqah-Contact-options {
+    padding: 30px 0 100px;
+  }
+  .cards{
+    margin: auto;
+  }
+}/*تابليت*/
+@media (max-width:992) {
+  .sadaqah-hero-section{
+    margin: 20px auto !important;
+    max-width: 900px;
+  }
+  .sadaqah-Contact-options {
+    padding: 10px 0 100px;
+  }
+}
+/* شاشة كبيرة */
+@media (min-width:1024px){
+  .sadaqah-Contact-options{
+    margin: auto;
+  }
+}
+
